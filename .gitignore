@@ -1,0 +1,48 @@
+# =========================
+# Visual Studio Code
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs y temporales
+# =========================
+*.log
+*.tmp
+*.swp
+*.swo
+
+# =========================
+# Archivos de build (si usas herramientas tipo npm)
+# =========================
+node_modules/
+dist/
+build/
+
+# =========================
+# Archivos de dependencias
+# =========================
+package-lock.json
+yarn.lock
+
+# =========================
+# Cachés y paquetes
+# =========================
+*.cache
+*.zip
+*.tar.gz
+
+# =========================
+# Archivos sensibles (por seguridad)
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+.env.test

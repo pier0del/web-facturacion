@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--declara que este archivo es HTML5
+   para que el navegador no se rompa
+-->
+<html lang="es">
+     <!-- esto indica que el contenido esta en español -->
+   
+<head> 
+    <!-- aqui van los metadatos como configuracion, estilo, titulos, etc..-->
+
+    <meta charset="utf-8"> 
+    <!-- codificacion utf-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- diseño responsive para moviles -->
+
+    <meta name="description" content="Factura de ejemplo"/>
+    <!-- descripcion para los motores de busqueda -->
+
+    <title>Factura | Limitless</title>
+    <!-- titulo que aparece en la pestaña del navegador -->
+     
+    <link rel="stylesheet" href="css/style.css">
+    <!-- hoja de estilo css -->
+</head>
+
+<body>
+    <!-- contenido principal del documento -->
+    <main  class="invoice-page" aria-label="Factura">
+
+        <!-- encabezado de factura -->
+        <header class="invoice-header">
+
+            <!-- informacion de marca -->
+            <div class="brand">
+                <h1 class="brand__name">Limitless</h1>
+                <!-- h1 :  titulo principal de documento-->
+
+                <p class="brand__tagline">Estudio creativo . Facturacion demo
+
+                </p>
+            </div>
+
+            <!-- datos del emisor -->
+            <address class="issuer" aria-label="datos del emisor">
+                <!-- adress: informacion de contacto oficial -->
+                <strong>Limitless Studio S.L.</strong><br />
+                Calle Falsa 123<br />
+                Madrid, 28080, España<br />
+                <span>VAT/NIF:</span>ESX12345679<br />
+                <a href="mailto:billing@limitless.example">billing@limitless.example</a><br />
+                <span>Tel:</span> +34 912 345 678
+            </address>
+        </header>
+
+        <hr />
+        <!-- separador visual -->
+        
+        
+        <!-- metadatos de la factura -->
+    <section class="invoice-meta" aria-label="informacion de la factura">
+        <div class="meta-grid">
+
+            <!-- datos generales de factura -->
+            <div>
+                <h2 class="section-title">Factura</h2>
+
+                <!-- dl : lista de definiciones (clave/valor )-->
+                <dl class="meta-list">
+                    <div>
+                        <dt>Numero</dt>
+                        <dd>INV-2027-001</dd>
+                    </div>
+                    <div>
+                        <dt>Fecha</dt>
+                        <dd>
+                            <time datetime="2027-04-01">
+                            1 de Abril de 2027
+                        </time>
+                    </dd>
+                    </div>
+                    <div>
+                        <dt>Vencimiento</dt>
+                        <dd>
+                            <time datetime="2027-04-15">
+                                15 de Abril de 2027
+                            </time>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+
+        <!-- datos de cliente-->
+        <div>
+            <h2 class="section-title">Factura a:</h2>
+            <address class="client" aria-label="datos del cliente">
+                <strong>Piero Alexander</strong><br />
+                Calle Verdadera 456<br />
+                Barcelona, 08080, España<br />
+                <span>VAT/NIF:</span>ESX98765432<br />
+                <a href="mailto:piero.alexander@outlook.com">piero.alexander@outlook.com</a>
+            </address>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<!-- detallles de conceptos-->
+<section class="invoice-items" aria-label="detalles de conceptos">
+    <h2 class="section-title">Detalle</h2>
+
+    <div class="table-wrap" role="region" aria-label="Tabla de conceptos" tabindex="0">
+        <table class="table">
+            <caption class="sr-only">conceptos facturados con tarifa, horas e importe</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col" class="num">Tarifa</th>
+                    <th scope="col" class="num">Horas</th>
+                    <th scope="col" class="num">Importe</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- fila 1-->
+                <tr>
+                    <td>
+                        <strong>Diseño UI + prototipado</strong><br />
+                        <span class="muted">Wireframes, sistema de componentes y revision final</span>
+                    </td>
+                    <td class="num">90,00 $</td>
+                    <td class="num">30</td>
+                    <td class="num">2.700,00 $</td>
+                </tr>
+
+                <!-- fila 2-->
+                <tr>
+                    <td>
+                        <strong>Implementacion HTML + CSS</strong><br />
+                        <span class="muted">maquetacion responsive + accesibilidad basica</span>
+                    </td>
+                        <td class="num">60,00 $</td>
+                        <td class="num">10</td>
+                        <td class="num">600,00 $</td>
+                    </tr>
+                </tbody>
+
+                <!-- totales -->
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="3" class="num">Subtotal</th>
+                        <td class="num">3.400,00 $</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="3" class="num">IVA (25%)</th>
+                        <td class="num"><strong>4.090,00 $</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- notas adicionales -->
+        <div class="notes">
+            <h3 class="notes__title">Notas</h3>
+            <p>
+                esto es una factura de <strong>demostracion</strong> todos los datos son ficticios y se usan solo para practicar
+            </p>
+        </div>
+    </section>
+
+    <hr />
+
+    <!-- informacion de pago-->
+    <section class="payment" aria-label="datos de pago">
+        <h2 class="section-title">Pago</h2>
+
+        <dl class="payments-list">
+            <div>
+                <dt>Metodo</dt>
+                <dd>Transferencia bancaria</dd>
+            </div>
+            <div>
+                <dt>Beneficiario</dt>
+                <dd>Limitless Studio S.L.</dd>
+            </div>
+            <div>
+                <dt>IBAN (demo)</dt>
+                <dd>ES00 00000 000000 00 000000000 0000000 000</dd>
+            </div>
+            <div>
+                <dt>SWIFT/BIC (demo)</dt>
+                <dd>DEMOESMMXXS</dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- pie de pagina -->
+    <footer class="invoice-footer">
+        <p class="muted">
+            Gracias por tu confianza. Si tienes dudas, escribe 
+            <a href="mailto:billing@limitless.example">billing@limitless.example</a>.
+        </p>
+
+        </footer>
+    </main>
+</body>
+</html>

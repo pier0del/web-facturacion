@@ -3,22 +3,22 @@ reset + variables
 ============== */
 
 :root {
-    --bg: #f2f4f7;
-    --card:  #ffffff;
-    --text: #111827;
-    --muted: #6b7280;
-    --border: #e5e7eb;
+    --bg:       #f2f4f7;
+    --card:     #ffffff;
+    --text:     #111827;
+    --muted:    #6b7280;
+    --border:   #e5e7eb;
     --border-2: #d1d5db;
-    --accent: #2563eb;
-    --shadow: 0 10px 30px rgba(17, 24, 39, 0.10);
-    --radius: 16px;
+    --accent:   #2563eb;
+    --shadow:   0 10px 30px rgba(17, 24, 39, 0.10);
+    --radius:   16px;
 
 }
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin:     0;
+    padding:    0;
 
 }
 
@@ -26,9 +26,9 @@ reset + variables
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    padding: 32px 26px;
+    background:  var(--bg);
+    color:       var(--text);
+    padding:     32px 26px;
     line-height: 1.5;
 }
 
@@ -39,60 +39,60 @@ a {
 a:hover { text-decoration: underline; }
 
 hr {
-    border: none;
+    border:     none;
     border-top: 1px solid var(--border);
-    margin: 18px 0;
+    margin:     18px 0;
 
 }
 
 /* helpers */
-.muted { color:var(--muted); }
+.muted { color:    var(--muted); }
 .num { text-align: right; font-variant-numeric: tabular-nums;}
 .sr-only {
     position: absolute;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px;
-    overflow: hidden; clip: rect(0,0,0,0);
-    border: 0; white-space: nowrap;
+    width:    1px;    height:      1px;
+    padding:  0;      margin:      -1px;
+    overflow: hidden; clip:        rect(0,0,0,0);
+    border:   0;      white-space: nowrap;
 
 }
 
 /* loyaut container */
 
 .invoice-page {
-    max-width: 980px;
-    margin: 0 auto;
-    background: var(--card);
-    padding: 28px;
+    max-width:     980px;
+    margin:        0 auto;
+    background:    var(--card);
+    padding:       28px;
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border);
+    box-shadow:    var(--shadow);
+    border:        1px solid var(--border);
 }
 
 /* header */
 
 .invoice-header{
-    display: flex;
+    display:          flex;
     justify-content:  space-between;
-    align-items: flex-start;
-    gap: 16px;
+    align-items:      flex-start;
+    gap:              16px;
 }
 
 .brand__name{
-    font-size:clamp(1.4rem, 3vw, 2rem);
+    font-size:      clamp(1.4rem, 3vw, 2rem);
     letter-spacing: 0.3px;
 }
 
 .brand__tagline{
     margin-top: 6px;
-    color: var(--muted);
-    font-size: 0.95rem;
+    color:      var(--muted);
+    font-size:  0.95rem;
 }
 
 .issuer, .client {
-    font-style: normal;
-    color:  var(--muted);
-    font-size:  0.95rem;
+    font-style:   normal;
+    color:        var(--muted);
+    font-size:    0.95rem;
     line-height:  1.6;
 }
 
@@ -104,34 +104,34 @@ hr {
 /*  section titles */
 
 .section-title {
-    font-size: 1.05rem;
+    font-size:       1.05rem;
     letter-spacing:  0.2px;
-    margin-bottom: 10px;
+    margin-bottom:   10px;
 }
 
 /* Meta section (invoice + client ) */
 
 .meta-grid {
-    display: grid;
+    display:               grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap:                   18px;
 }
 
 .meta-list {
-    display: grid;
-    gap: 10px;
-    color: var(--muted);
+    display:   grid;
+    gap:       10px;
+    color:     var(--muted);
     font-size: 0.95rem;
 }
 
 .meta-list > div{
-    display: grid;
+    display:               grid;
     grid-template-columns: 120px 1fr;
-    gap: 10px;
-    padding:  10px 12px;
-    background: #f9fafb;
-    border:  1px solid  var(--border);
-    border-radius:  12px;
+    gap:                   10px;
+    padding:               10px 12px;
+    background:          #f9fafb;
+    border:                1px solid var(--border);
+    border-radius:         12px;
 }
 
 .meta-list dt{
@@ -142,33 +142,33 @@ hr {
 /* table */
 
 .table-wrap {
-    overflow-x: auto;
-    border: 1px solid var(--border);
+    overflow-x:     auto;
+    border:         1px solid var(--border);
     border-radius:  14px;
 }
 
 .table {
-    width: 100%;
+    width:            100%;
     border-collapse:  collapse;
-    min-width: 720px; /* hace que haya scroll si pantala es pequeña */
+    min-width:        720px; /* hace que haya scroll si pantala es pequeña */
 }
 
 .table thead th{
-    background: #0f172a; /* dark header */
-    color: #fff;
-    text-align: left;
-    font-weight: 750;
-    padding: 12px 14px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    white-space: nowrap;
+    background:   #0f172a; /* dark header */
+    color:        #fff;
+    text-align:     left;
+    font-weight:    750;
+    padding:        12px 14px;
+    border-bottom:  1px solid rgba(255, 255, 255, 0.12);
+    white-space:    nowrap;
 
 }
 
 .table tbody td{
-    padding: 12px 14px;
+    padding:        12px 14px;
     vertical-align: top;
-    border-bottom: 1px solid var(--border);
-    color: var(--text);
+    border-bottom:  1px solid var(--border);
+    color:          var(--text);
 }
 
 .table tbody tr:nth-child(even){
@@ -176,15 +176,15 @@ hr {
 }
 
 .table tbody strong{
-    display: block;
+    display:       block;
     margin-bottom: 4px;
 
 }
 
 .table tfoot th,
 .table tfoot td{
-    padding: 12px 14px;
-    border-top:  1px solid #c7d2fe;
+    padding:      12px 14px;
+    border-top:   1px solid #c7d2fe;
 }
 
 .total-row td strong{
@@ -194,50 +194,50 @@ hr {
 /* notes */
 
 .notes{
-    margin-top:  14px;
-    padding: 14px 16px;
-    border: 1px dashed var(--border-2);
+    margin-top:    14px;
+    padding:       14px 16px;
+    border:        1px dashed var(--border-2);
     border-radius: 14px;
-    background: #fcfcff;
+    background:  #fcfcff;
 
 }
 
 .notes-title{
-    font-size: 1rem;
+    font-size:     1rem;
     margin-bottom: 6px;
 }
 
 .notes p{
-    color: var(--muted);
-    font-size: 0.95rem;
+    color:      var(--muted);
+    font-size:  0.95rem;
     margin-top: 8px;
 }
 
 /* payment */
 
 .payment-list{
-    display: grid;
-    gap: 10px;
+    display:   grid;
+    gap:       10px;
     font-size: 0.95rem;
 }
 
 .payment-list > div{
-    display: grid;
+    display:               grid;
     grid-template-columns: 170px 1fr;
-    gap: 10px;
-    padding: 10px 12px;
-    background:  #f6fafb;
-    border: 1px solid var(--border);
-    border-radius: 12px;
+    gap:                   10px;
+    padding:               10px 12px;
+    background:          #f6fafb;
+    border:                1px solid var(--border);
+    border-radius:         12px;
 }
 
 .payment-list dt{
-    color: var(--muted);
+    color:       var(--muted);
     font-weight: 750;
 }
 
 .payment-list dd{
-    color: var(--text);
+    color:       var(--text);
     font-weight: 650;
 }
 
@@ -246,32 +246,32 @@ hr {
 .invoice-footer{
     margin-top: 10px;
     text-align: center;
-    color: var(--muted);
-    font-size: 0.95rem;
+    color:      var(--muted);
+    font-size:  0.95rem;
 }
 
 /* responsive */
 
 @media (max-width: 720px){
     body{
-        padding: 18px 12px;
+        padding:   18px 12px;
     }
 
     .invoice-page{
-        padding: 18px;
+        padding:       18px;
         border-radius: 14px;
     }
 
     .invoice-header{
         flex-direction: column;
-        align-items: flex-start;
+        align-items:    flex-start;
     }
 
     .meta-grid{
         grid-template-columns: 1fr;
     }
 
-    .meta-list > div{
+    .meta-list    > div{
         grid-template-columns: 1fr;
 
     }
